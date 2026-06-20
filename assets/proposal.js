@@ -14,7 +14,7 @@ const CONFIG = {
   intro: {
     eyebrow: 'a little something',
     title: 'Hi Cutiefly 🩷',
-    body: "I'm not great at saying the big stuff out loud, so I made you this instead. Walk through it with me?",
+    body: "There's so much to say, but I made you this instead. Walk through it with me?",
     cta: "Okay, let's 💕",
   },
 
