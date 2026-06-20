@@ -36,8 +36,8 @@ const CONFIG = {
       // replies by number of hearts (1 to 5); last one is the "max" answer
       replies: [
         "I think you misclicked. ",
-        "Yeah this one was definitely a misclick. ",
-        "Eh, no need to be shy.",
+        "Misclick?. ",
+        "Erm, no need to be shy.",
         "Okay, now you're making me blush. 🩷",
         "You just made my whole week. 🩷",
       ],
@@ -64,7 +64,7 @@ const CONFIG = {
   // (body uses <br> for line breaks — it's rendered as HTML.)
   prebuildup: {
     title: 'You mean the world to me.',
-    body: "You mean the world to me.<br>You saved me from this lonely hell.<br>Please find it in your heart.<br>Don't give up on us Cici.<br>Don't leave me all alone in this hell.",
+    body: "You saved me from this lonely hell.<br>Please find it in your heart.<br>Don't give up on us Cici.<br>Don't leave me all alone in this hell.",
     cta: "Next.",
   },
 
