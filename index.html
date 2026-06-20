@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  ============================================================
+  FOR CIANNA  ·  a little proposal page
+  How to edit this page:
+   - All the words (questions, replies, the big question, the
+     finale message, the "No" button taunts) live at the TOP of
+     assets/proposal.js, in the CONFIG block. Change them there.
+   - The gift button link: set CONFIG.finale.giftUrl in proposal.js
+     to the live Cynnanex site URL once the domain is live.
+   - Colours, fonts and animations live in assets/proposal.css.
+   - This page is "noindex" so search engines skip it. Share the
+     link directly. Keep scripts/styles in their own files. The
+     page's CSP (the <meta> tag below) blocks inline <script>/<style>/onclick.
+  ============================================================
+-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<title>A question for you 🩷</title>
+<meta name="description" content="Something I made, just for you." />
+<meta name="theme-color" content="#FFF8F9" />
+
+<!-- GitHub Pages can't set HTTP response headers, so the security policy lives
+     here as a meta tag. Note: frame-ancestors / HSTS can't be set via <meta>;
+     those need a real server (Cloudflare/Netlify) if you ever want them. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests" />
+
+<link rel="icon" href="assets/art/avatar.png" />
+
+<!-- Fraunces (romantic headings) + Fredoka (the big playful moments) + Nunito (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/proposal.css" />
+</head>
+
+<body>
+
+<!-- Celebration layers (decorative, drawn by JS) -->
+<canvas id="confetti" class="fx" aria-hidden="true"></canvas>
+<div id="hearts" class="fx" aria-hidden="true"></div>
+
+<!-- Soft floating background blobs -->
+<div id="bg" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+
+<main class="stage">
+  <!-- The whole experience renders into here -->
+  <section id="app" aria-live="polite"></section>
+
+  <!-- Shown only if JavaScript is off, so she still sees the question -->
+  <noscript>
+    <div class="card in">
+      <p class="eyebrow">a little something</p>
+      <h1 class="title">Hi Cianna 🩷</h1>
+      <p class="lead">I made you an interactive page, but it needs JavaScript turned on to work its magic. So I'll just say it plainly here:</p>
+      <h2 class="q">Can I be your boyfriend?</h2>
+      <p class="lead">(yes please 🥹)</p>
+    </div>
+  </noscript>
+</main>
+
+<script src="assets/proposal.js"></script>
+</body>
+</html>
